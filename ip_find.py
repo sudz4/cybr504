@@ -61,6 +61,10 @@ def check_vpn():
 
     ip_after = requests.get('https://api.ipify.org').text
     location_after = get_location_info(ip_after)
+    print()
+    print("Location before VPN connection (2): ")
+    print(location_before)
+
     print("Location after VPN connection: ")
     print(location_after)
 
