@@ -1,37 +1,12 @@
-# import requests
+"""
 
-# def get_location_info(ip_address):
-#     url = f"https://ipapi.co/{ip_address}/json/"
-#     response = requests.get(url)
-#     data = response.json()
-#     return {
-#         "ip": data["ip"],
-#         "city": data["city"],
-#         "region": data["region"],
-#         "country": data["country_name"],
-#         "latitude": data["latitude"],
-#         "longitude": data["longitude"]
-#     }
+This program is used to verify VPN connnection.
+Use this program while activating and deactivating VPN connections
+Have fun.
 
-# def check_vpn():
-#     ip_before = requests.get('https://api.ipify.org').text
-#     location_before = get_location_info(ip_before)
-#     print("Location before VPN connection: ")
-#     print(location_before)
+"""
 
-#     # Connect to VPN here using your preferred method
-#     ip_after = requests.get('https://api.ipify.org').text
-#     location_after = get_location_info(ip_after)
-#     print("Location after VPN connection: ")
-#     print(location_after)
-
-#     if ip_before == ip_after:
-#         print("VPN not working")
-#     else:
-#         print("VPN working")
-
-# check_vpn()
-
+# libraries
 import requests
 import time
 
@@ -65,13 +40,16 @@ def check_vpn():
     print("Location before VPN connection (2): ")
     print(location_before)
 
+    print()
     print("Location after VPN connection: ")
     print(location_after)
 
     if ip_before == ip_after:
+        print()
         print("VPN not working")
     else:
-        print("VPN working")
+        print()
+        print("VPN Successfuly Working!")
 
 check_vpn()
 
