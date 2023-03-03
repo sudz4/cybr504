@@ -15,8 +15,6 @@ if response.status_code != 200:
 data = response.json()
 
 # Print the IP information
-print('This is your IP information evailable to the WEB')
-print()
 print("IP address:", data["ip"])
 print("Country:", data["country_name"], "(" + data["country_code"] + ")")
 print("Region:", data["region"])
