@@ -14,7 +14,8 @@ if response.status_code != 200:
 # Parse the JSON response
 data = response.json()
 
-# Print the IP information
+# Print the IP ianformation
+print()
 print("IP address:", data["ip"])
 print("Country:", data["country_name"], "(" + data["country_code"] + ")")
 print("Region:", data["region"])
